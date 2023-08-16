@@ -3,244 +3,155 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assest/normalize.css">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Case 1</title>
+    <link rel="stylesheet" href="assets/8.0.1_normalize.css">
     <style>
         * {
             margin: 0;
             padding: 0;
         }
+        body>section {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
 
-        body>section>section:first-child {
+
+        body>section>section {
             width: 50vw;
             height: 50vh;
-            background-color: red;
-            display: inline-block;
+            position: absolute;
+        }
 
+
+        body>section>section:nth-child(1) {
+            background: red;
+            left: 0;
+            top: 0;
+        }
+
+        body>section>section:nth-child(2) {
+            background: orange;
+            bottom: 0;
+            left: 0;
         }
 
         body>section>section:nth-child(3) {
-            width: 50vw;
-            height: 50vh;
-            background-color: orange;
-            display: inline-block;
-            margin: auto;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
-
-
-        body>section>section:nth-child(2) {
-            width: 50vw;
-            height: 50vh;
-            background-color: green;
-            display: inline-block;
-            margin: auto;
-            position: absolute;
+            background: green;
             top: 0;
             right: 0;
         }
 
-        body>section>section:last-child {
-            width: 50vw;
-            height: 50vh;
-            background-color: deeppink;
-            display: inline-block;
-            margin: auto;
-            position: absolute;
+        body>section>section:nth-child(4) {
+            background: deeppink;
             bottom: 0;
             right: 0;
         }
 
-        body>section>section>div {
-            width: 25%;
-            height: 50%;
-            border-radius: 100%;
-            background-color: white;
-            position: relative;
-            left: 250px;
-            top: 75px;
-        }
-
-        body>section>section:nth-child(2)>div {
-            width: 25%;
-            height: 50%;
-            border-radius: 100%;
-            background-color: white;
-            position: absolute;
-            margin: auto;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-        }
-
-        body>section>section:nth-child(3)>div {
-            width: 25%;
-            height: 50%;
-            border-radius: 100%;
-            background-color: white;
-            position: absolute;
-            margin: auto;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-        }
-
-        body>section>section:last-child>div {
-            width: 25%;
-            height: 50%;
-            border-radius: 100%;
-            background-color: white;
-            position: absolute;
-            margin: auto;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-        }
-
-        body>section>section:first-child>div>div {
-            width: 50%;
-            height: 50%;
-            background-color: red;
-            position: absolute;
-            margin: auto;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-        }
-
-        body>section>section:nth-child(2)>div>div {
-            width: 50%;
-            height: 50%;
-            background-color: red;
-            position: absolute;
-            margin: auto;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-        }
-
-        body>section>section:nth-child(3)>div>div {
-            width: 50%;
-            height: 50%;
-            background-color: red;
-            position: absolute;
-            margin: auto;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-        }
-
-        body>section>section:last-child>div>div {
-            width: 50%;
-            height: 50%;
-            background-color: red;
-            position: absolute;
-            margin: auto;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-        }
-
-        body>div {
+        body>section>section>section {
             width: 200px;
             height: 200px;
-            background-color: white;
+            border-radius: 200px;
+            background: white;
             position: absolute;
-            margin: auto;
             top: 0;
-            right: 0;
-            left: 0;
             bottom: 0;
-            align-items: center;
-            justify-content: center;
-        }
-
-        body>div>div {
-            width: 50%;
-            height: 50%;
-            border-radius: 100%;
-            background-color: red;
-            position: absolute;
+            left: 0;
+            right: 0;
             margin: auto;
+        }
+
+        body>section>section>section>div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;
             left: 0;
-            top: 0;
             right: 0;
+            top: 0;
             bottom: 0;
+            margin: auto;
         }
 
-        .top-left-corner {
+        body>section>div:nth-child(5) {
+            width: 200px;
+            height: 200px;
+            background: white;
             position: absolute;
-            width: 130px;
-            height: 130px;
-            border-bottom-right-radius: 100%;
-            background-color: white;
-            right: 87.8rem;
-            bottom: 40rem;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
         }
 
-        .top-middle-corner {
-            position: absolute;
+        body>section>div>div {
             width: 150px;
             height: 150px;
-            border-bottom-right-radius: 50%;
-            border-bottom-left-radius: 50%;
-            background-color: white;
-            top: 0;
-            right: 0;
+            background: red;
+            border-radius: 150px;
+            position: absolute;
             left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
             margin: auto;
-            bottom: 50rem;
         }
 
-        .top-right-corner {
-            position: absolute;
-            width: 130px;
-            height: 130px;
-            border-bottom-left-radius: 100%;
-            background-color: white;
-            left: 86.8rem;
-            bottom: 40rem;
-        }
-
-        .bottom-left-corner {
-            position: absolute;
-            width: 130px;
-            height: 130px;
-            border-top-right-radius: 100%;
-            background-color: white;
-            right: 87.8rem;
-            top: 39.6rem;
-        }
-
-        .bottom-middle-corner {
-            position: absolute;
+        body>section>div:nth-child(5)~div {
             width: 150px;
             height: 150px;
-            border-top-right-radius: 100%;
-            border-top-left-radius: 100%;
-            background-color: white;
-            top: 47rem;
+            background: white;
+            position: absolute;
         }
 
-        .bottom-right-corner {
-            position: absolute;
-            width: 130px;
-            height: 130px;
-            border-top-left-radius: 100%;
-            background-color: white;
-            left: 86.8rem;
-            top: 39.6rem;
+        body>section>div:nth-child(5)~div:nth-child(6) {
+            right: 0;
+            top: 0;
+            border-bottom-right-radius: 200px;
+            transform: rotate(90deg);
+        }
+
+        body>section>div:nth-child(5)~div:nth-child(7) {
+            right: 0;
+            bottom: 0;
+            border-bottom-right-radius: 200px;
+            transform: rotate(180deg);
+        }
+
+        body>section>div:nth-child(5)~div:nth-child(8) {
+            left: 0;
+            bottom: 0;
+            border-bottom-right-radius: 200px;
+            transform: rotate(270deg);
+        }
+
+        body>section>div:nth-child(5)~div:nth-child(9) {
+            left: 0;
+            right: 0;
+            top: 0;
+            margin: auto;
+            border-bottom-left-radius: 150px;
+            border-bottom-right-radius: 150px;
+            height: 75px;
+        }
+
+        body>section>div:nth-child(5)~div:nth-child(10) {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border-bottom-left-radius: 150px;
+            border-bottom-right-radius: 150px;
+            height: 75px;
+            transform: rotate(180deg);
+        }
+
+        body>section>div:nth-child(5)~div:nth-child(11) {
+            left: 0;
+            top: 0;
+            border-bottom-right-radius: 200px;
+
         }
     </style>
 
@@ -250,41 +161,79 @@
 
     <section>
         <section>
-            <div class="middle">
+            <section>
                 <div></div>
-            </div>
+            </section>
+
         </section>
 
         <section>
-            <div class="middle">
+            <section>
                 <div></div>
-            </div>
+            </section>
         </section>
 
         <section>
-            <div class="middle">
+            <section>
                 <div></div>
-            </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <div></div>
+            </section>
+        </section>
+
+        <div>
+            <div></div>
+        </div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <section>
+        <section>
+            <section>
+                <div></div>
+            </section>
+
         </section>
 
         <section>
-            <div class="middle">
+            <section>
                 <div></div>
-            </div>
+            </section>
         </section>
 
+        <section>
+            <section>
+                <div></div>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <div></div>
+            </section>
+        </section>
+
+        <div>
+            <div></div>
+        </div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
     </section>
 
-    <div>
-        <div></div>
-    </div>
 
-    <div class="top-left-corner"></div>
-    <div class="top-middle-corner"></div>
-    <div class="top-right-corner"></div>
-    <div class="bottom-left-corner"></div>
-    <div class="bottom-middle-corner"></div>
-    <div class="bottom-right-corner"></div>
 
 </body>
 
