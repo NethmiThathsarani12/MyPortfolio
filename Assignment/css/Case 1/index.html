@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assest/normalize.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body>section>section:first-child {
+            width: 50vw;
+            height: 50vh;
+            background-color: red;
+            display: inline-block;
+
+        }
+
+        body>section>section:nth-child(3) {
+            width: 50vw;
+            height: 50vh;
+            background-color: orange;
+            display: inline-block;
+            margin: auto;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+
+        body>section>section:nth-child(2) {
+            width: 50vw;
+            height: 50vh;
+            background-color: green;
+            display: inline-block;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        body>section>section:last-child {
+            width: 50vw;
+            height: 50vh;
+            background-color: deeppink;
+            display: inline-block;
+            margin: auto;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        body>section>section>div {
+            width: 25%;
+            height: 50%;
+            border-radius: 100%;
+            background-color: white;
+            position: relative;
+            left: 250px;
+            top: 75px;
+        }
+
+        body>section>section:nth-child(2)>div {
+            width: 25%;
+            height: 50%;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        body>section>section:nth-child(3)>div {
+            width: 25%;
+            height: 50%;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        body>section>section:last-child>div {
+            width: 25%;
+            height: 50%;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        body>section>section:first-child>div>div {
+            width: 50%;
+            height: 50%;
+            background-color: red;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        body>section>section:nth-child(2)>div>div {
+            width: 50%;
+            height: 50%;
+            background-color: red;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        body>section>section:nth-child(3)>div>div {
+            width: 50%;
+            height: 50%;
+            background-color: red;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        body>section>section:last-child>div>div {
+            width: 50%;
+            height: 50%;
+            background-color: red;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        body>div {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body>div>div {
+            width: 50%;
+            height: 50%;
+            border-radius: 100%;
+            background-color: red;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .top-left-corner {
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            border-bottom-right-radius: 100%;
+            background-color: white;
+            right: 87.8rem;
+            bottom: 40rem;
+        }
+
+        .top-middle-corner {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            background-color: white;
+            top: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            bottom: 50rem;
+        }
+
+        .top-right-corner {
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            border-bottom-left-radius: 100%;
+            background-color: white;
+            left: 86.8rem;
+            bottom: 40rem;
+        }
+
+        .bottom-left-corner {
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            border-top-right-radius: 100%;
+            background-color: white;
+            right: 87.8rem;
+            top: 39.6rem;
+        }
+
+        .bottom-middle-corner {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-top-right-radius: 100%;
+            border-top-left-radius: 100%;
+            background-color: white;
+            top: 47rem;
+        }
+
+        .bottom-right-corner {
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            border-top-left-radius: 100%;
+            background-color: white;
+            left: 86.8rem;
+            top: 39.6rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section>
+        <section>
+            <div class="middle">
+                <div></div>
+            </div>
+        </section>
+
+        <section>
+            <div class="middle">
+                <div></div>
+            </div>
+        </section>
+
+        <section>
+            <div class="middle">
+                <div></div>
+            </div>
+        </section>
+
+        <section>
+            <div class="middle">
+                <div></div>
+            </div>
+        </section>
+
+    </section>
+
+    <div>
+        <div></div>
+    </div>
+
+    <div class="top-left-corner"></div>
+    <div class="top-middle-corner"></div>
+    <div class="top-right-corner"></div>
+    <div class="bottom-left-corner"></div>
+    <div class="bottom-middle-corner"></div>
+    <div class="bottom-right-corner"></div>
+
+</body>
+
+</html>
