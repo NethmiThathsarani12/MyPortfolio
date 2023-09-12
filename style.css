@@ -57,3 +57,41 @@ body{
     list-style: none;
 }
 
+.logo a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: .4s ease-in-out;
+}
+.logo a:hover,
+.logo a.active {
+    color: var(--main-color);
+}
+
+.nav-links {
+    padding-left: 25.5rem;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+
+.nav-items a {
+    position: relative;
+    height: 10px;
+    margin-left: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    padding: 6px 20px 6px 20px;
+    font-size: 15px;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+}
+
+.nav-items a:hover,
+.nav-items a.active {
+    color: var(--main-color);
+    border: 2px solid var(--text-color);
+}
+
