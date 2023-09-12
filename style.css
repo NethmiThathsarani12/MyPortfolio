@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Exo:wght@900&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@1,900&family=Tektur:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Exo:wght@900&family=Lilita+One&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@1,900&family=Tektur:wght@400;500;600;700&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +14,14 @@
 .home-content {
     max-width: 41rem;
     z-index: 99;
+}
+
+body{
+    width: 100%;
+    position: relative;
+    font-family: 'Poppins' , roboto;
+    background: var(--bg--color);
+    color: var(--text-color);
 }
 
 .header{
@@ -24,10 +37,23 @@
     transition: .3s;
 }
 
-body{
+.nav-bar{
     width: 100%;
+    height: 80px;
     position: relative;
-    font-family: 'Poppins' , roboto;
-    background: var(--bg--color);
-    color: var(--text-color);
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: flex;
+    align-items: center;
 }
+
+
+.logo {
+    position: relative;
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 600;
+    list-style: none;
+}
+
