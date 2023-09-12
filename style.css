@@ -94,4 +94,12 @@ body{
     color: var(--main-color);
     border: 2px solid var(--text-color);
 }
-
+.cont-me a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding-right: 10px;
+    transition: 0.4s ease-in-out;
+}
+.cont-me a:hover {
+    color: var(--main-color);
+}
