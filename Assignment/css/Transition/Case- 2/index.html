@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      section{
+      width: 500px;
+      height: 500px;
+      border: 10px solid green;
+      background-color: #ff253a;
+      border-radius: 100%;
+      border-top: 10px solid yellow;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      
+
+    }
+
+    section>h1{
+       position: absolute;
+      margin: auto;
+     top: 45%;
+     left: 45%;
+      /* font-size: 50px; */
+    }
+
+    section:hover{
+        transform: rotate(360deg);
+        transition: 3s all;
+
+    }
+
+    section:hover h1{
+transform: rotate(-360deg);
+transition: 3s all;
+    }
+
+    </style>
+
+</head>
+<body>
+    <section>
+        <h1>RWAD</h1>
+    </section>
+    
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+   body>section{
+     display: flex;
+     flex-direction: column;
+    }
+
+  body>section>div{
+     position: relative;
+     background-color: purple;
+     width: 200px;
+     height: 50px;
+     margin: 10px 0px 10px 0px;
+     right: 200px;
+
+   }
+
+  body>section>div:hover{
+      transition-duration: 4s;
+      transition-property: all;
+       right: 10px;
+       color: white;
+       background-color: purple;
+   }
+  </style>
+
+</head>
+<body>
+<section>
+  <div><i class="fa-solid fa-house"></i><h3>Menu one</h3></div>
+  <div><h3>Menu Two</h3></div>
+  <div><h3>Menu Three</h3></div>
+  <div><h3>Menu fore</h3></div>
+</section>
+</body>
+</html>
