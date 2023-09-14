@@ -160,7 +160,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('./images/homeImage.png') no-repeat;
+    background: url('assets/images/homeImage.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -525,51 +525,51 @@ span {
 
 .swiper-slide--one {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("./images/WhatsApp\ Image\ 2023-06-27\ at\ 19.07.48.jpeg") no-repeat 50% 50% / cover;
+    url("assets/images/WhatsApp\ Image\ 2023-06-27\ at\ 19.07.48.jpeg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--two {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("./images/WhatsApp\ Image\ 2023-06-27\ at\ 19.28.12.jpeg") no-repeat 50% 50% / cover;
+    url("assets/images/WhatsApp\ Image\ 2023-06-27\ at\ 19.28.12.jpeg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--three {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("./images/WhatsApp\ Image\ 2023-06-27\ at\ 20.08.27.jpeg") no-repeat 50% 50% / cover;
+    url("assets/images/WhatsApp\ Image\ 2023-06-27\ at\ 20.08.27.jpeg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--four {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("./images/WhatsApp\ Image\ 2023-06-27\ at\ 20.16.34.jpeg") no-repeat 50% 50% / cover;
+    url("assets/images/WhatsApp\ Image\ 2023-06-27\ at\ 20.16.34.jpeg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--five {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("./images/WhatsApp\ Image\ 2023-06-27\ at\ 20.18.35.jpeg") no-repeat 50% 50% / cover;
+    url("assets/images/WhatsApp\ Image\ 2023-06-27\ at\ 20.18.35.jpeg") no-repeat 50% 50% / cover;
 }
 .swiper-slide--six {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("./images/WhatsApp\ Image\ 2023-06-27\ at\ 19.07.48.jpeg") no-repeat 50% 50% / cover;
+    url("assets/images/WhatsApp\ Image\ 2023-06-27\ at\ 19.07.48.jpeg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--seven {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("./images/WhatsApp\ Image\ 2023-06-27\ at\ 19.28.12.jpeg") no-repeat 50% 50% / cover;
+    url("assets/images/WhatsApp\ Image\ 2023-06-27\ at\ 19.28.12.jpeg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--eight {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("./images/WhatsApp\ Image\ 2023-06-27\ at\ 20.08.27.jpeg") no-repeat 50% 50% / cover;
+    url("assets/images/WhatsApp\ Image\ 2023-06-27\ at\ 20.08.27.jpeg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--nine {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("./images/WhatsApp\ Image\ 2023-06-27\ at\ 20.16.34.jpeg") no-repeat 50% 50% / cover;
+    url("assets/images/WhatsApp\ Image\ 2023-06-27\ at\ 20.16.34.jpeg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--ten {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("./images/WhatsApp\ Image\ 2023-06-27\ at\ 20.18.35.jpeg") no-repeat 50% 50% / cover;
+    url("assets/images/WhatsApp\ Image\ 2023-06-27\ at\ 20.18.35.jpeg") no-repeat 50% 50% / cover;
 }
 
 .swiper-3d .swiper-slide-shadow-left,
