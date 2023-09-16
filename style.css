@@ -155,7 +155,7 @@ section {
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: 1px var(--main-color);
-    background: url(./icons/back.png);
+    background: url(assets/icons/back.png);
     /* background-image: linear-gradient(var(--main-color), var(--main-color)); */
     /* background-repeat: no-repeat; */
     -webkit-background-clip: text;
