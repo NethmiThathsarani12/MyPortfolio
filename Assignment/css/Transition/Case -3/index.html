@@ -1,40 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Case-3</title>
 </head>
 <style>
-    section {
-        width: 100%;
-        height: 100vh;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
         display: flex;
-        justify-content: center;
         align-items: center;
-        background-color: black;
+        justify-content: center;
+        height: 100vh;
+        flex-direction: column;
+        background-color: rgb(100, 147, 147);
     }
 
-    section > div {
-        border: 10px solid white;
-        width: 500px;
-        height: 300px;
-        text-align: center;
-        background-color: gray;
+    .container {
+        position: relative;
+        overflow: hidden; /* Add overflow to hide overflowed content */
     }
 
-    section > div > img {
-        width: 200px;
-        height: 200px;
-        margin: auto;
+    .container:hover .bin {
+        transform: translateY(0); /* Change translateY value to 0 */
+        visibility: visible;
     }
+
+    .image {
+        width: 400px;
+        height: 400px;
+        position: relative; /* Add relative positioning */
+    }
+
+    .image img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .bin {
+        position: absolute;
+        bottom: 0; /* Start at the bottom */
+        left: 0;
+        background: rebeccapurple;
+        opacity: .8;
+        width: 400px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+        transform: translateY(100%); /* Initially, move it off-screen */
+        transition: .5s;
+    }
+
 </style>
 
 <body>
-    <section>
-        <div>
-            <img src="img/icons8-car-64.png" alt="">
+    <div class="container">
+        <div class="image">
+            <img src="img/car.jpg" alt="">
         </div>
-    </section>
+        <div class="bin">
+            <img src="img/bin.png" alt="">
+        </div>
+    </div>
 </body>
+
 </html>
