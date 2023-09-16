@@ -24,18 +24,13 @@
 
     .container {
         position: relative;
-        overflow: hidden; /* Add overflow to hide overflowed content */
-    }
-
-    .container:hover .bin {
-        transform: translateY(0); /* Change translateY value to 0 */
-        visibility: visible;
+        overflow: hidden; 
     }
 
     .image {
         width: 400px;
         height: 400px;
-        position: relative; /* Add relative positioning */
+        position: relative;
     }
 
     .image img {
@@ -44,20 +39,41 @@
         object-fit: cover;
     }
 
-    .bin {
+    .graydiv {
         position: absolute;
-        bottom: 0; /* Start at the bottom */
+        bottom: 0;
         left: 0;
-        background: rebeccapurple;
+        background: gray;
         opacity: .8;
         width: 400px;
         height: 400px;
         display: flex;
         align-items: center;
         justify-content: center;
-        visibility: hidden;
-        transform: translateY(100%); /* Initially, move it off-screen */
+        transform: translateY(100%);
         transition: .5s;
+    }
+
+    .bin {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .8;
+        width: 400px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-100%);
+        transition: .5s;
+    }
+
+    .container:hover .graydiv {
+        transform: translateY(0);
+    }
+
+    .container:hover .bin {
+        transform: translateY(0);
     }
 
 </style>
@@ -67,6 +83,7 @@
         <div class="image">
             <img src="img/car.jpg" alt="">
         </div>
+        <div class="graydiv"></div>
         <div class="bin">
             <img src="img/bin.png" alt="">
         </div>
