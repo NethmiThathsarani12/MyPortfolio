@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case-4</title>
 
-<style>
+    <style>
 
 section {
     width: 500px;
@@ -22,35 +22,43 @@ section {
     bottom: 0;
 }
 
-section > div:nth-child(1) {
-    margin: auto;
-    width: 2%;
-    height: 50%;
-    background-color: red;
-   pointer-events: none;
-}
+section>div:first-child{
+            width: 2%;
+            height: 50%;
+            background-color: red;
+            position: absolute;
+            margin: auto;
+             top: 0;
+            bottom: 22vh;
+            left: 10vw;
+             right: 0; 
+            transform: rotate(40deg);
+        }
 
-section:hover{
+        section>div>div:last-child{
+            width: 40px;
+            height: 42px;
+            border-radius: 100%;
+            background-color: red;
+            position: relative;
+            top: -5vh;
+            right: 0.6vw;
+        }
+
+        section:hover{
         transform: rotate(360deg);
         transition: 3s all;
 
     }
 
-    section>div:nth-child(2){
-        margin: auto;
-        width: 5%;
-        height: 5%;
-        border-radius: 100%;
-        background-color: red;
-    }
-
-</style>
+    </style>
 
 </head>
 <body>
     <section>
-        <div></div>
-        <div></div>
+        <div>
+            <div></div>
+        </div>
     </section>
 </body>
 </html>
