@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>case-1</title>
+    <style>
+        div{
+            width: 200px;
+            height: 80px;
+            background: red;
+            border-radius: 20px;
+            animation-name: anima;
+            animation-duration: 2s;
+            animation-iteration-count: 4;
+            animation-fill-mode: forwards;
+            animation-direction: alternate;
+            transform-origin: center;
+        }
+
+        @keyframes anima{
+            0%{
+
+                margin: 0px 0px 0px 0px;
+                background: orange;
+                transform: rotate(0deg);
+                
+
+            }
+
+            25%{
+                margin: 0px 0px 0px 1300px;
+                background: blue;
+                transform: rotate(120deg);
+
+
+            }
+
+            50%{
+                
+                margin: 600px 0px 0px 1300px;
+                background: brown;
+                transform: rotate(180deg);
+            }
+
+            75%{
+
+                margin: 600px 0px 0px 0px;
+                background: black;
+                transform: rotate(220deg);
+
+            }
+            100%{
+
+                margin: 0px 0px 0px 0px;
+                transform: rotate(360deg);
+
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
