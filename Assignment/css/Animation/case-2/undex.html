@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>case-2</title>
+    <style>
+        body{
+            background-color: rgb(1, 1, 87);
+        }
+
+        body>div:first-child{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(1, 1, 87);
+            border-radius: 100%;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+
+            /* firsht div */
+            z-index: 1;
+
+        }
+
+        body>div:nth-child(2){
+            width: 400px;
+            height: 400px;
+            background-color: bisque;
+            border-radius: 100%;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            animation-name: anima;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            transform: translateX(-18px);
+            rotate: -45deg;
+        }
+
+        @keyframes anima{
+            0%{
+
+            }
+
+            25%{
+                transform: translateX(0px);
+                filter: drop-shadow(10px 10px 200px  bisque) drop-shadow(-10px -10px 50px  goldenrod);
+
+            }
+
+            50%{
+                transform: translateX(10px);
+                filter: drop-shadow(10px 10px 200px  goldenrod) drop-shadow(-10px -10px 50px bisque);
+
+
+            }
+
+            65%{
+                transform: translateX(13px);
+                filter: drop-shadow(10px 10px 200px  goldenrod) drop-shadow(-10px -10px 50px goldenrod);
+
+
+            }
+
+            80%{
+                transform: translate(20px);
+
+            }
+
+            100%{
+                transform: translate(30px);
+
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+</body>
+</html>
