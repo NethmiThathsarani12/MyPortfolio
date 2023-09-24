@@ -155,9 +155,7 @@ section {
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: 1px var(--main-color);
-    background: url(assets/icons/back.png);
-    /* background-image: linear-gradient(var(--main-color), var(--main-color)); */
-    /* background-repeat: no-repeat; */
+    background: url(./icons/back.png);
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: homeBgText 20s linear infinite;
@@ -290,20 +288,20 @@ section {
     width: 100%;
 }
 
-/* .home-imgHover {
+.home-imgHover {
     position: absolute;
     top: 0;
     right: 0;
     width: 45%;
     height: 100%;
     background: transparent;
-    transition: 3s;
+    transition: 2s;
 }
 
 .home-imgHover:hover {
     background: var(--bg-color);
     opacity: .8;
-} */
+}
 
 span {
     color: var(--main-color);
@@ -394,14 +392,14 @@ span {
 .works {
     position: relative;
     align-items: center;
-    padding: 0 50px;
+    /* padding: 0 57px; */
     padding-top: 10rem;
     min-height: 100vh;
     max-width: 90vw;
     margin: 0 auto;
 }
 
-.works a {
+.swiper a {
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
@@ -428,6 +426,26 @@ span {
     font-weight: 700;
     text-align: center;
     padding-top: 2rem;
+}
+
+.card .img {
+    padding-top: 1.3rem;
+    padding-bottom: 2rem;
+    width: 50%;
+    object-fit: cover;
+}
+.assign {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-weight: 500;
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 3.125rem;
+    margin: 0 auto;
+    padding: 6px 26px;
+    font-size: 1.5rem;
+    transition: 0.3s ease-in-out;
 }
 
 .swiper {
@@ -640,9 +658,15 @@ span {
 
 .experience_info {
     display: flex;
+    align-items: center;
     justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
     margin-top: 3.5rem;
-    margin-left: 25rem;
+    /* margin-left: 25rem; */
     width: 800px;
     position: relative;
     /* background: var(--main-color); */
@@ -717,7 +741,7 @@ span {
 }
 
 .slider {
-    width: 110rem;
+    width: 100%;
     max-width: 100vw;
     height: 555px;
     margin: 2rem auto 8rem auto;
@@ -1074,25 +1098,27 @@ footer .wave#wave4 {
     break points 
 ********************/
 
+/* have to look work section responsive errors */
+
 @media (max-width: 1200px) {
     html {
-        font-size: 50%;
+        font-size: 55%;
     }
 
     .swiper-slide {
-        height: 400px;
-    }
-
-    .edu_heading {
-        padding: 5px 20px 5px 30px;
+        height: 300px;
     }
 
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1120px) {
     .experience_info {
         margin-left: 18rem;
         width: 650px;
+    }
+
+    .swiper-slide {
+        width: 300px;
     }
 }
 
@@ -1105,33 +1131,32 @@ footer .wave#wave4 {
         padding: 2rem 4%;
     }
 
-    .section {
-        padding: 10rem 4% 2rem;
-    }
-
     .home {
         padding: 0 4%;
     }
 
     .education {
-        width: 450px;
+        width: 100%;
+        height: 90%;
     }
 
     .experience_info {
-        margin-left: 15rem;
-        /* width: 450px; */
+        width: 90%;
     }
 
     .slider {
         width: 90rem;
     }
+
+    .footer {
+        padding: 2rem 4%; /*new edit*/
+    }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 862px) {
     html {
         font-size: 50%;
     }
-
     .header {
         font-size: 1rem;
     }
@@ -1144,6 +1169,12 @@ footer .wave#wave4 {
         width: 55%;
     }
 
+    .home-imgHover {
+        pointer-events: none;
+        background: var(--bg-color);
+        opacity: .6;
+    }
+
     .swiper-slide {
         height: 350px;
     }
@@ -1153,23 +1184,20 @@ footer .wave#wave4 {
     }
 
     .education {
-        width: 390px;
+        width: 85%;
+        height: 50%;
     }
 
     .experience_info {
-        margin-left: 25rem;
-        width: 250px;
+        width: 85%;
     }
 
     .slider {
-        width: 80rem;
+        width: 100%;
     }
 }
 
-@media (max-width: 760px) {
-    html {
-        font-size: 50%;
-    }
+@media (max-width: 768px) {
 
     .header {
         background: var(--bg-color);
@@ -1239,6 +1267,13 @@ footer .wave#wave4 {
         border: none;
     }
 
+    /* .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    } */
+
     .home-imgHover {
         pointer-events: none;
         background: var(--bg-color);
@@ -1269,7 +1304,8 @@ footer .wave#wave4 {
     }
 
     .education {
-        height: 90rem;
+        width: 100%;
+        height: 95rem;
     }
 
     .experience_content {
@@ -1290,11 +1326,16 @@ footer .wave#wave4 {
 
     .experience_info {
         display: flex;
+        align-items: center;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        padding: 0px 30px;
-        margin-left: 10rem;
+        padding: 20px 30px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
     }
 
     .year {
@@ -1313,8 +1354,8 @@ footer .wave#wave4 {
     }
 
     .slider {
-        height: 350px;
-        width: 60rem;
+        height: 450px;
+        width: 100%;
     }
 
     #contact .row {
@@ -1331,6 +1372,16 @@ footer .wave#wave4 {
         margin-top: 5rem;
         width: 100%;
     }
+
+    .social_icons a {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer .wave {
+        top: -40px;
+        height: 40px;
+    }
 }
 
 @media (max-width: 520px) {
@@ -1338,7 +1389,7 @@ footer .wave#wave4 {
         font-size: 50%;
     }
 
-    .home-content {
+    .home-content h1 {
         display: flex;
         flex-direction: column;
     }
@@ -1381,27 +1432,51 @@ footer .wave#wave4 {
     }
 
     .experience_info {
-        margin-left: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 30px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
     }
 
     .slider {
-        width: 50rem;
+        width: 90%;
     }
 }
 
 @media (max-width: 462px) {
-
-    .home-content h1 {
-        font-size: 5.2rem;
+    html {
+        font-size: 45%;
     }
 
-    /* .education {
-        padding: 10rem 4% 5rem 5%;
-    } */
+    .home {
+        justify-content: center;
+    }
 
-    /* .contact form input {
-        width: 100%;
-    } */
+    .home-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content h1{
+        font-size: 6rem;
+    }
+
+    .home-content .text-animate h3 {
+        font-size: 5rem;
+    }
+
+    .home-content p {
+        font-size: 1.5rem;
+    }
 
     .works {
         display: flex;
@@ -1410,7 +1485,8 @@ footer .wave#wave4 {
     }
 
     .swiper-slide {
-        height: 200px;
+        width: 100%;
+        /* height: 200px; */
     }
 
     .swiper-pagination {
@@ -1427,19 +1503,30 @@ footer .wave#wave4 {
     }
 
     .education {
-        width: 200px;
+        position: relative;
+        /* width: 100%; */
     }
 
     .experience_part {
-        width: 200px;
+        margin-top: 2rem;
     }
 
     .experience_info {
-        margin-left: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 30px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
     }
 
     .slider {
-        width: 40rem;
+        width: 90%;
     }
 
     .footer {
@@ -1453,18 +1540,23 @@ footer .wave#wave4 {
 }
 
 @media (max-width: 370px) {
+    html {
+        font-size: 39%;
+    }
+
     .home {
         justify-content: center;
     }
 
     .home-content {
+        /* width: 100%; */
         display: flex;
         align-items: center;
         flex-direction: column;
         text-align: center;
     }
 
-    .home-content h1 {
+    .home-content h1{
         font-size: 5rem;
     }
 
@@ -1473,11 +1565,11 @@ footer .wave#wave4 {
     }
 
     .about img {
-        width: 25rem;
+        width: 40rem;
     }
 
     .about-content h3 {
-        font-size: 2.4rem;
+        font-size: 2.8rem;
         padding-top: 1rem;
     }
 
@@ -1526,6 +1618,38 @@ footer .wave#wave4 {
         margin-top: 2rem;
     }
 
+    .education {
+        height: 100%;
+    }
+
+    .experience_info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 30px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    .slider {
+        margin-top: 5rem;
+        width: 90%;
+    }
+
+    .slider .dots li {
+        width: 5px;
+        height: 5px;
+    }
+
+    .contact-left p {
+        font-size: 1.5rem;
+    }
+
 }
 
 
@@ -1545,6 +1669,7 @@ KEYFRAME ANIMATION
     0% {
         background-position-x: 1000px;
     }
+
     100% {
         background-position-x: 0px;
     }
@@ -1554,6 +1679,7 @@ KEYFRAME ANIMATION
     0% {
         background-position-x: 0px;
     }
+
     100% {
         background-position-x: 1000px;
     }
