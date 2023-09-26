@@ -26,7 +26,7 @@
 
 }
 
-.dark-mode {
+/* .dark-mode {
     --bg-color: #000000;
     --second-bg-color: #000000;
     --text-color: #ffffff;
@@ -34,7 +34,7 @@
     --new-color: #bd83b8;
     --card-color: #bd83b8;
     --main2-color: #ffffff;
-}
+} */
 
 html {
     font-size: 62.5%;
