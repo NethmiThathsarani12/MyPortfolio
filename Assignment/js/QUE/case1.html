@@ -11,7 +11,7 @@
       justify-content: center;
     }
 
-    div {
+    body>section>div {
       width: 200px;
       height: 80px;
       border: 1px solid black;
@@ -30,26 +30,49 @@
 
 
     #div6 {
-      margin-top: 45vh;
+      margin-top: 60vh;
 
     }
+
+    #div7{
+      width: 1200px;
+      height: 2px;
+      background-color: white;
+      position: absolute;
+      top: 40%;
+      left: 10%;
+}
+
+   #div8{
+
+      width: 1200px;
+      height: 2px;
+      background-color: white;
+      position: absolute;
+      bottom: 40%;
+      left: 10%;
+}
   </style>
 </head>
 
-<body>
+<body style="background-color: black;">
   <section>
-    <div id="div1"></div>
-    <section>
-      <div id="div2"></div>
-      <div id="div3"></div>
-      <div id="div4"></div>
-      <div id="div5"></div>
-    </section>
+    <div id="div1" class="div"></div>
+
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
+
     <div id="div6"></div>
+
   </section>
 
+  <div id="div7"></div>
+  <div id="div8"></div>
+
   <script>
-    var colors = new Array("pink", "green", "blue", "red", "purple", "black");
+    var colors = new Array("pink", "green", "blue", "red", "purple", "orange");
     let divs = document.querySelectorAll("section>div");
 
     setInterval(prograss, 300);
