@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Case_1</title>
+  <meta name="viewport" content="width=device-width initial, scale=1.0">
+  <style>
+    section {
+      display: flex;
+      justify-content: center;
+    }
+
+    div {
+      width: 200px;
+      height: 80px;
+      border: 1px solid black;
+      display: inline-block;
+      position: relative;
+      margin-left: 1%;
+      margin-top: 10%;
+      align-self: center;
+      border-radius: 10px;
+    }
+
+    #div1 {
+      margin-bottom: 45vh;
+
+    }
+
+
+    #div6 {
+      margin-top: 45vh;
+
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div id="div1"></div>
+    <section>
+      <div id="div2"></div>
+      <div id="div3"></div>
+      <div id="div4"></div>
+      <div id="div5"></div>
+    </section>
+    <div id="div6"></div>
+  </section>
+
+  <script>
+    var colors = new Array("pink", "green", "blue", "red", "purple", "black");
+    let divs = document.querySelectorAll("section>div");
+
+    setInterval(prograss, 300);
+
+    function prograss() {
+
+      for (let i = 0; i < colors.length; i++) {
+        divs[i].style.background = colors[i];
+      }
+
+      let lastvalue = colors.pop();
+      colors.unshift(lastvalue);
+    }
+  </script>
+</body>
+
+</html>
