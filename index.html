@@ -17,6 +17,10 @@
 
 <body>
 
+    <section id="loader">
+        <div></div>
+    </section>
+
     <header class="header">
         <a href="#home" class="logo">nethmi. <span class="animate" style="--i:1;"></span></a>
 
@@ -412,7 +416,25 @@
         <p>©2023 All Rights Reserved | Nethmi Thathsarani</p>
     </footer>
 
+<script src="assets/jquery-3.7.1.min.js"></script>
+<script>
+    $(window).on('load',function (){
+    // $("#loader").css('display','none');
+    $("#loader").fadeOut(1000);
+    console.log("Window is fully loaded");
+});
 
+
+//if you want to run something just after the creation of DOM object this is the event for that
+$(document).ready(function (){
+    console.log("Document is ready")
+});
+
+//alternative
+$(function (){
+    console.log("Document is ready");
+});
+</script>
 
    
 
