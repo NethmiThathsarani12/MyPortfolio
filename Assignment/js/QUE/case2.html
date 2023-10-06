@@ -2,22 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>case-2</title>
-
+    <title>walking assignment</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
 
 </head>
-<body>
+<body class="bg-dark">
+<div class="container-fluid  position-absolute top-50 start-50 translate-middle  " style="width: 100%; height: 30vw;">
+    <div class="row w-100 h-100 m-0">
+        <div class="col-9 position-relative ml-3">
+            <div class="container w-100 border-bottom border-opacity-25" style="height: 50%; margin-top: 11.5%;">
+                <div class="row w-100 h-100">
+                    <div class="col-2 h-100 position-relative fs-2" >
+                        <span class="position-absolute text-white top-0 end-0"></span>
+                        <img src="assets/walking.gif" alt="" class=" img w-200 h-100"   >
+                    </div>
+                    <div class="col-2 h-100 position-relative fs-2">
+                        <span class="position-absolute text-white top-0 end-0"></span>
+                        <img src="assets/walking.gif" alt="" class=" img w-200 h-100" style="" >
+                    </div>
+                    <div class="col-2 h-100 position-relative fs-2">
+                        <span class="position-absolute text-white top-0 end-0"></span>
+                        <img src="assets/walking.gif" alt="" class=" img w-200 h-100" >
+                    </div>
+                    <div class="col-2 h-100 position-relative fs-2">
+                        <span class="position-absolute text-white top-0 end-0"></span>
+                        <img src="assets/walking.gif" alt="" class=" img w-200 h-100" style="" >
+                    </div>
+                    <div class="col-2 h-100 position-relative fs-2">
+                        <span class="position-absolute text-white top-0 end-0"></span>
+                        <img src="assets/walking.gif" alt="" class=" img w-200 h-100" style="" >
+                    </div>
+                    <div class="col-2 h-100 position-relative fs-2">
+                        <span class="position-absolute text-white top-0 end-0"></span>
+                        <img src="assets/walking.gif" alt="" class=" img w-200 h-100" style="" >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3  m-0 p-0 ">
+            <div class="container w-100 h-100  p-0 position-relative">
+                <div class="row-cols-1 position-absolute top-50 translate-middle-y">
+                    <img src="assets/house.gif" alt="" width="10%" style="border-radius: 50% 50% 0 0;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/bootstrap.js"></script>
+
+<script>
+    let order = ["D","E","F","A","B","C"];
+    let txt = document.querySelectorAll(".text-white");
+    let img = document.querySelectorAll(".img");
+
+    setOrder();
+
+    function setOrder() {
+        interval = setInterval(function (){
+            for (let i = 0; i < order.length; i++) {
+                txt[i].innerText = order[i];
+            }
+
+            let last = order.pop();
+            order.unshift(last);
+        },1000)
+    }
+
+</script>
 
 
-
-
-
-
-
-    <script>
-        
-    </script>
-    
 </body>
 </html>
