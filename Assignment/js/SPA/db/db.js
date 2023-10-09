@@ -5,3 +5,7 @@ var customerDB = [
     {id: "C00-004", name: "Kalana Nethmina", address: "Tissa", salary: 10000}
 
 ];
+
+var itemDB = [
+    {}
+];
