@@ -35,7 +35,7 @@ $("#btnItemDelete").click(function (){
 });
 
 // call item update method
-$("#btnUpdate").click(function () {
+$("#btnItemUpdate").click(function () {
     let code = $("#txtItemId").val();
     updateItem(code);
     clearItemInputFields();
@@ -123,4 +123,35 @@ function deleteItem(code) {
         }
     }
     return false;
+}
+
+function searchItem(code) {
+    return itemDB.find(function (item) {
+        //if the search id match with customer record
+        //then return that object
+        return item.code == code;
+    });
+}
+
+function updateItem(code) {
+    if (searchItem(code) == undefined) {
+        alert("No such Item..please check the ID");
+    } else {
+        let consent = confirm("Do you really want to update this item.?");
+        if (consent) {
+            let item = searchItem(code);
+            //if the customer available can we update.?
+
+            let itemDescription = $("#txtItemName").val();
+            let itemQty = $("#txtQty").val();
+            let itemPrice = $("#txtPrice").val();
+
+            item.description = itemDescription;
+            item.qtyOnHand = itemQty;
+            item.unitPrice = itemPrice;
+
+            getAllItems();
+        }
+    }
+
 }
