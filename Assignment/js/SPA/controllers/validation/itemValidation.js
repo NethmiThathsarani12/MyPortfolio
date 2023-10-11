@@ -5,7 +5,7 @@ const ITEM_PRICE_REGEX = /^[0-9]{2,}([.][0-9]{2})?$/;
 const ITEM_QTY_REGEX = /^[0-9]{2,}([.][0-9]{2})?$/;
 
 let i_vArray = new Array();
-i_vArray.push({field: $("#txtItemName"), regEx: ITEM_ID_REGEX});
+i_vArray.push({field: $("#txtItemId"), regEx: ITEM_ID_REGEX});
 i_vArray.push({field: $("#txtItemName"), regEx: ITEM_NAME_REGEX});
 // c_vArray.push({field: $("#txtCustomerAddress"), regEx: CUS_ADDRESS_REGEX});
 i_vArray.push({field: $("#txtPrice"), regEx: ITEM_PRICE_REGEX});
@@ -23,7 +23,7 @@ setItemBtn();
 
 $("#txtItemId,#txtItemName,#txtPrice").on("keydown keyup", function (e) {
     //get the index number of data input fields indexNo
-    let indexNu = i_vArray.indexOf(i_vArray.find((c) => c.field.attr("id") == e.target.id));
+    let indexNo = i_vArray.indexOf(i_vArray.find((i) => i.field.attr("id") == e.target.id));
 
     //Disable tab key
     if (e.key == "Tab") {
@@ -31,7 +31,7 @@ $("#txtItemId,#txtItemName,#txtPrice").on("keydown keyup", function (e) {
     }
 
     //check validations
-    checkItemValidations(i_vArray[indexNu]);
+    checkItemValidations(i_vArray[indexNo]);
 
     setItemBtn();
 
@@ -40,11 +40,11 @@ $("#txtItemId,#txtItemName,#txtPrice").on("keydown keyup", function (e) {
 
         if (e.target.id != i_vArray[i_vArray.length - 1].field.attr("id")) {
             //check validation is ok
-            if (checkItemValidations(i_vArray[indexNu])) {
-                i_vArray[indexNu + 1].field.focus();
+            if (checkItemValidations(i_vArray[indexNo])) {
+                i_vArray[indexNo + 1].field.focus();
             }
         } else {
-            if (checkItemValidations(i_vArray[indexNu])) {
+            if (checkItemValidations(i_vArray[indexNo])) {
                 saveItem();
             }
         }
@@ -88,26 +88,26 @@ function checkAllItem() {
 }
 
 
-// function setItemBtn() {
-//     $("#btnItemDelete").prop("disabled", true);
-//     $("#btnItemUpdate").prop("disabled", true);
+function setItemBtn() {
+    // $("#btnItemDelete").prop("disabled", true);
+    $("#btnItemUpdate").prop("disabled", true);
 
-//     if (checkAllItem()) {
-//         $("#btnItem").prop("disabled", false);
-//     } else {
-//         $("#btnItem").prop("disabled", true);
-//     }
+    if (checkAllItem()) {
+        $("#btnItem").prop("disabled", false);
+    } else {
+        // $("#btnItem").prop("disabled", true);
+    }
 
-//     let code = $("#txtItemId").val();
-//     if (searchItem(code) == undefined) {
-//         $("#btnItemDelete").prop("disabled", true);
-//         $("#btnItemUpdate").prop("disabled", true);
-//     } else {
-//         $("#btnItemDelete").prop("disabled", false);
-//         $("#btnItemUpdate").prop("disabled", false);
-//     }
+    let code = $("#txtItemId").val();
+    if (searchItem(code) == undefined) {
+        // $("#btnItemDelete").prop("disabled", true);
+        $("#btnItemUpdate").prop("disabled", true);
+    } else {
+        $("#btnItemDelete").prop("disabled", false);
+        $("#btnItemUpdate").prop("disabled", false);
+    }
 
-// }
+}
 
 
 
