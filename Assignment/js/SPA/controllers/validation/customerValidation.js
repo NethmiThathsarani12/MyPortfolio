@@ -89,11 +89,11 @@ function setBtn() {
     $("#btnCusDelete").prop("disabled", true);
     $("#btnUpdate").prop("disabled", true);
 
-    // if (checkAll()) {
-    //     $("#btnCustomer").prop("disabled", false);
-    // } else {
-    //     $("#btnCustomer").prop("disabled", true);
-    // }
+    if (checkAll()) {
+        $("#btnCustomer").prop("disabled", false);
+    } else {
+        $("#btnCustomer").prop("disabled", true);
+    }
 
     let id = $("#txtCustomerID").val();
     if (searchCustomer(id) == undefined) {
