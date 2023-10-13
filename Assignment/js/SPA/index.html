@@ -56,6 +56,34 @@
     </nav>
 </header>
 
+<section id="Dashboard">
+    <div class="container text-center" style="padding-top: 90px;">
+        <div class="row">
+            <div class="card text-bg-primary mb-3" style="max-width: 18rem; height: 300px; margin: 30px">
+                <div class="card-body">
+                    <div class="card-header">Customer Count</div>
+                    <div><i class="fas fa-user" style="font-size: 80px; margin-top: 30px"></i></div>
+                    <label id="cusCount" style="margin-top: 30px"></label>
+                </div>
+            </div>
+            <div class="card text-bg-secondary mb-3" style="max-width: 18rem; height: 300px ; margin: 30px">
+                <div class="card-body">
+                    <div class="card-header">Item Count</div>
+                    <div><i class="fas fa-first-order" style="font-size: 80px; margin-top: 30px"></i></div>
+                    <h2 id="itemCount" style="margin-top: 30px">03</h2>
+                </div>
+            </div>
+            <div class="card text-bg-success mb-3" style="max-width: 18rem; height: 300px; margin: 30px">
+                <div class="card-body">
+                    <div class="card-header">Order Count</div>
+                    <div><i class="fas fa-list-check" style="font-size: 80px; margin-top: 30px"></i></div>
+                    <h2 id="orderCount" style="margin-top: 30px">000</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="CustomerFormManage">
     <div class="container text-center">
         <div class="row align-items-start">
@@ -352,51 +380,14 @@
 <script src="../assets/js/bootstrap.min.js"></script>
 <script>
 
-    let customer = document.querySelector("#CustomerFormManage");
-    let item = document.querySelector("#ItemFormManage");
-    let order = document.querySelector("#orderManage");
-    // let tBody = document.querySelector("#tblCustomer");
-
-    customer.style.display ='none';
-    item.style.display ='none';
-    order.style.display ='none';
-
-    let lnkHome = document.querySelector("#home");
-    let lnkOrder = document.querySelector("#orders");
-    let lnkCustForm =document.querySelector("#custForm");
-    let lnkIForm =document.querySelector("#IForm");
-
-    lnkCustForm.addEventListener("click",function (){
-        customer.style.display ='block';
-        item.style.display ='none';
-        order.style.display ='none';
-    })
-
-    lnkIForm.addEventListener("click",function (){
-        customer.style.display ='none';
-        item.style.display ='block';
-        order.style.display ='none';
-    })
-
-    lnkHome.addEventListener("click",function (){
-        customer.style.display ='none';
-        item.style.display ='none';
-        order.style.display ='none';
-
-    })
-
-    lnkOrder.addEventListener("click",function (){
-        order.style.display = 'block';
-        customer.style.display ='none';
-        item.style.display ='none';
-
-    })
+    
 
 </script>
 <!-- add db js class -->
 <script src="db/db.js"></script>
 
 <!-- add customer js class -->
+<script src="controllers/dashboardController.js"></script>
 <script src="models/customer.js"></script>
 <script src="controllers/customerController.js"></script>
 <script src="controllers/validation/customerValidation.js"></script>
