@@ -88,26 +88,26 @@ function checkAllItem() {
 }
 
 
-function setItemBtn() {
-    // $("#btnItemDelete").prop("disabled", true);
-    $("#btnItemUpdate").prop("disabled", true);
+// function setItemBtn() {
+//     // $("#btnItemDelete").prop("disabled", true);
+//     // $("#btnItemUpdate").prop("disabled", true);
 
-    if (checkAllItem()) {
-        $("#btnItem").prop("disabled", false);
-    } else {
-        // $("#btnItem").prop("disabled", true);
-    }
+//     if (checkAllItem()) {
+//         $("#btnItem").prop("disabled", false);
+//     } else {
+//         // $("#btnItem").prop("disabled", true);
+//     }
 
-    let code = $("#txtItemId").val();
-    if (searchItem(code) == undefined) {
-        // $("#btnItemDelete").prop("disabled", true);
-        $("#btnItemUpdate").prop("disabled", true);
-    } else {
-        $("#btnItemDelete").prop("disabled", false);
-        $("#btnItemUpdate").prop("disabled", false);
-    }
+//     let code = $("#txtItemId").val();
+//     if (searchItem(code) == undefined) {
+//         // $("#btnItemDelete").prop("disabled", true);
+//         // $("#btnItemUpdate").prop("disabled", true);
+//     } else {
+//         $("#btnItemDelete").prop("disabled", false);
+//         $("#btnItemUpdate").prop("disabled", false);
+//     }
 
-}
+// }
 
 
 
