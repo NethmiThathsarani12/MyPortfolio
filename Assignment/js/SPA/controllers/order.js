@@ -41,3 +41,27 @@ $('#MenuItem').change(function () {
 function saveOrder(){
 
 }
+
+function setOrderId() {
+    if (orderDB.length > 0) {
+        $("#txtOrderID").val("O00" + (orderDB.length + 1));
+    } else {
+        $("#txtOrderID").val("O001");
+    }
+    $("#selectCustomerId").focus();
+}
+
+
+// let orderCounter = 0;
+// function generateOrderID() {
+//     orderCounter++;
+//     const paddedCounter = orderCounter.toString().padStart(2, '0');
+//     return `O${paddedCounter}`;
+//   }
+  
+//   // Example usage:
+//   const newOrderID = generateOrderID();
+//   console.log(newOrderID); // This will display the next order ID, e.g., "O01"
+// // Example usage:
+// document.getElementById('OederId').value = generateOrderID();
+  

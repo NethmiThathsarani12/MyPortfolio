@@ -44,6 +44,7 @@ lnkOrder.addEventListener("click",function (){
     
     loadAllCusID();
     loadAllItemID();
+    setOrderId();
 })
 
 function cusCount(){
