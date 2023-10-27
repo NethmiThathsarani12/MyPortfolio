@@ -179,6 +179,7 @@ section {
     font-size: 4.9rem;
     font-weight: 700;
     color: transparent;
+    /* letter outline */
     -webkit-text-stroke: 1px var(--main-color);
     background: url(assets/icons/back.png);
     -webkit-background-clip: text;
