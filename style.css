@@ -25,7 +25,7 @@
 
 }
 
-/* .dark-mode {
+.dark-mode {
     --bg-color: #000000;
     --second-bg-color: #000000;
     --text-color: #ffffff;
@@ -33,7 +33,7 @@
     --new-color: #bd83b8;
     --card-color: #bd83b8;
     --main2-color: #ffffff;
-} */
+}
 
 #loader {
     width: 100vw;
@@ -64,7 +64,7 @@
 
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 body {
@@ -532,25 +532,25 @@ span {
 
 .swiper-slide--two {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-        url("assets/images/WhatsApp\ Image\ 2023-06-27\ at\ 19.28.12.jpeg") no-repeat 50% 50% / cover;
+        url("assets/images/devtown.png") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--three {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-        url("assets/images/WhatsApp\ Image\ 2023-06-27\ at\ 20.08.27.jpeg") no-repeat 50% 50% / cover;
+        url("assets/images/google.png") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--four {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-        url("assets/images/WhatsApp\ Image\ 2023-06-27\ at\ 20.16.34.jpeg") no-repeat 50% 50% / cover;
+        url("assets/images/microsoft.png") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--five {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-        url("assets/images/WhatsApp\ Image\ 2023-06-27\ at\ 20.18.35.jpeg") no-repeat 50% 50% / cover;
+        url("assets/images/icbt_eng.png") no-repeat 50% 50% / cover;
 }
 
-.swiper-slide--six {
+/* .swiper-slide--six {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
         url("assets/images/microsoft.png") no-repeat 50% 50% / cover;
 }
@@ -568,11 +568,11 @@ span {
 .swiper-slide--nine {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
         url("assets/images/icbt_eng.png") no-repeat 50% 50% / cover;
-}
+} */
 
 .swiper-slide--ten {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-        url("assets/images/WhatsApp\ Image\ 2023-06-27\ at\ 20.18.35.jpeg") no-repeat 50% 50% / cover;
+        url("assets/images/google.png") no-repeat 50% 50% / cover;
 }
 
 .swiper-3d .swiper-slide-shadow-left,
@@ -765,76 +765,31 @@ span {
     padding-bottom: 1rem;
 }
 
-.slider {
-    width: 100%;
-    max-width: 100vw;
-    height: 555px;
-    margin: 2rem auto 8rem auto;
-    position: relative;
-    overflow: hidden;
-}
-
-.slider .list {
-    position: absolute;
-    width: max-content;
-    height: 100%;
-    left: 0;
-    top: 0;
+.gal_container {
     display: flex;
-    transition: 1s;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin: 40px 0px 0 20px; */
 }
 
-.slider .list img {
-    width: 1300px;
-    max-width: 100vw;
-    height: 100%;
-    object-fit: cover;
-}
-
-.slider .buttons {
-    position: absolute;
-    top: 45%;
-    left: 5%;
-    width: 90%;
+.gal_container .box {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-.slider .buttons button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.333);
-    color: var(--text-color);
-    border: none;
-    font-family: monospace;
-    font-weight: bold;
-}
-
-.slider .dots {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    color: #fff;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+.gal_container .box .dream {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    width: 32.5%;
 }
 
-.slider .dots li {
-    list-style: none;
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    margin: 10px;
-    border-radius: 20px;
-    transition: 0.5s;
-}
-
-.slider .dots li.active {
-    width: 30px;
+.gal_container .box .dream img {
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
 }
 
 .contact {
@@ -1169,9 +1124,9 @@ footer .wave#wave4 {
         width: 90%;
     }
 
-    .slider {
+    /* .slider {
         width: 90rem;
-    }
+    } */
 
     .footer {
         padding: 2rem 4%; /*new edit*/
@@ -1217,9 +1172,9 @@ footer .wave#wave4 {
         width: 85%;
     }
 
-    .slider {
+    /* .slider {
         width: 100%;
-    }
+    } */
 }
 
 @media (max-width: 768px) {
@@ -1378,10 +1333,18 @@ footer .wave#wave4 {
         padding: 5px 20px 5px 30px;
     }
 
-    .slider {
-        height: 450px;
+    .container .box {
+        flex-direction: column;
+    }
+
+    .container .box .dream {
         width: 100%;
     }
+
+    /* .slider {
+        height: 450px;
+        width: 100%;
+    } */
 
     #contact .row {
         flex-basis: 100%;
@@ -1470,9 +1433,9 @@ footer .wave#wave4 {
         margin: auto;
     }
 
-    .slider {
+    /* .slider {
         width: 90%;
-    }
+    } */
 }
 
 @media (max-width: 462px) {
@@ -1550,9 +1513,9 @@ footer .wave#wave4 {
         margin: auto;
     }
 
-    .slider {
+    /* .slider {
         width: 90%;
-    }
+    } */
 
     .footer {
         flex-direction: column-reverse;
@@ -1661,7 +1624,7 @@ footer .wave#wave4 {
         margin: auto;
     }
 
-    .slider {
+    /* .slider {
         margin-top: 5rem;
         width: 90%;
     }
@@ -1669,7 +1632,7 @@ footer .wave#wave4 {
     .slider .dots li {
         width: 5px;
         height: 5px;
-    }
+    } */
 
     .contact-left p {
         font-size: 1.5rem;
